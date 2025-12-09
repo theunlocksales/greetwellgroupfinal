@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Products - GreetWell Group | India's Finest Agricultural Exports</title>
+    <meta name="description" content="Explore GreetWell Group's premium range of agricultural products including golden turmeric, fresh vegetables, and organic produce exported worldwide.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ==========================================
+           INLINE CSS FOR PRODUCTS PAGE
+           ========================================== */
+        
+        :root {
+            --charcoal: #1a1a1a;
+            --cream: #faf7f2;
+            --cream-dark: #f0ebe0;
+            --white: #ffffff;
+            --gold-primary: #c9a961;
+            --gold-light: #f4e4c1;
+            --gold-dark: #a68a4d;
+            --gold-metallic: #d4af37;
+            --accent-green: #4a7c59;
+            --accent-green-light: #6ba582;
+            --gray-text: #6a6a6a;
+            --gradient-gold: linear-gradient(135deg, #c9a961 0%, #f4e4c1 50%, #c9a961 100%);
+            --gradient-green: linear-gradient(135deg, #2d4a2d 0%, #4a7c59 100%);
+            --gradient-luxury: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%);
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 10px 40px rgba(0, 0, 0, 0.12);
+            --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.2);
+            --shadow-gold: 0 8px 32px rgba(201, 169, 97, 0.3);
+            --transition-smooth: all 0.3s ease;
+            --transition-ultra: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --font-display: 'Cinzel', serif;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--charcoal);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .container-wide {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ========== NAVIGATION ========== */
+        .luxury-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .logo-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .logo-text h1 span {
+            color: var(--gold-primary);
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--gold-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .luxury-nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .nav-link {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .btn-gold-premium {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: var(--gradient-gold);
+            color: var(--charcoal);
+            font-weight: 700;
+            border-radius: 50px;
+            transition: var(--transition-bounce);
+        }
+
+        .btn-gold-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .luxury-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .luxury-hamburger span {
+            width: 30px;
+            height: 3px;
+            background: var(--gold-primary);
+            border-radius: 3px;
+            transition: var(--transition-smooth);
+        }
+
+        /* ========== PRODUCTS HERO ========== */
+        .products-hero-section {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%);
+            overflow: hidden;
+            padding-top: 100px;
+        }
+
+        .products-hero-content {
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            z-index: 3;
+            padding: 4rem 0;
+        }
+
+        .breadcrumb-luxury {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .breadcrumb-luxury a {
+            color: var(--gold-light);
+        }
+
+        .products-hero-title {
+            font-family: var(--font-display);
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .title-gold {
+            color: var(--gold-primary);
+        }
+
+        .products-hero-subtitle {
+            font-size: 1.35rem;
+            color: var(--gold-metallic);
+            letter-spacing: 2px;
+            margin-bottom: 2.5rem;
+        }
+
+        .products-hero-features {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(201, 169, 97, 0.3);
+            border-radius: 50px;
+            font-weight: 700;
+        }
+
+        .hero-feature-item i {
+            color: var(--gold-primary);
+            font-size: 1.5rem;
+        }
+
+        /* ========== FILTER SECTION ========== */
+        .product-filter-section {
+            padding: 2.5rem 0;
+            background: var(--white);
+            border-bottom: 2px solid var(--cream);
+            position: sticky;
+            top: 90px;
+            z-index: 100;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .filter-tabs-luxury {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-tab {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: var(--cream);
+            color: var(--charcoal);
+            border: 2px solid transparent;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition-bounce);
+        }
+
+        .filter-tab:hover {
+            background: var(--cream-dark);
+            transform: translateY(-3px);
+        }
+
+        .filter-tab.active {
+            background: var(--gradient-gold);
+            border-color: var(--gold-dark);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* ========== MAIN PRODUCTS GRID ========== */
+        .main-products-section {
+            padding: 6rem 0;
+            background: var(--cream);
+        }
+
+        .section-header-luxury {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 2rem;
+            background: rgba(74, 124, 89, 0.1);
+            border: 2px solid var(--accent-green);
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-heading-luxury {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+
+        .heading-highlight {
+            color: var(--accent-green);
+        }
+
+        .section-description {
+            font-size: 1.15rem;
+            color: var(--gray-text);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .products-main-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+        }
+
+        .product-showcase-card {
+            background: var(--white);
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-ultra);
+            border: 2px solid transparent;
+        }
+
+        .product-showcase-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--gold-primary);
+        }
+
+        .product-image-container {
+            position: relative;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .product-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .product-showcase-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-badges {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            z-index: 2;
+        }
+
+        .product-badges span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            border-radius: 50px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .badge-organic {
+            background: rgba(74, 124, 89, 0.95);
+            color: var(--white);
+        }
+
+        .badge-featured {
+            background: rgba(201, 169, 97, 0.95);
+            color: var(--charcoal);
+        }
+
+        .badge-premium {
+            background: rgba(201, 169, 97, 0.95);
+            color: var(--charcoal);
+        }
+
+        .badge-fresh {
+            background: rgba(74, 124, 89, 0.95);
+            color: var(--white);
+        }
+
+        .badge-hot {
+            background: rgba(220, 53, 69, 0.95);
+            color: var(--white);
+        }
+
+        .product-card-content {
+            padding: 2.5rem 2rem;
+        }
+
+        .product-category-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: rgba(74, 124, 89, 0.1);
+            border: 2px solid var(--accent-green);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-card-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+
+        .product-short-desc {
+            color: var(--gray-text);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-features-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .product-features-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--charcoal);
+            font-weight: 600;
+        }
+
+        .product-features-list i {
+            color: var(--accent-green);
+        }
+
+        .product-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--cream);
+        }
+
+        .product-availability {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-green);
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .btn-product-quote {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--gradient-gold);
+            color: var(--charcoal);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: var(--transition-bounce);
+        }
+
+        .btn-product-quote:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .product-showcase-card.hidden {
+            display: none;
+        }
+
+        /* ========== CTA SECTION ========== */
+        .ultimate-cta-section {
+            padding: 6rem 0;
+            background: var(--gradient-luxury);
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-luxury-content h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-luxury-content p {
+            font-size: 1.15rem;
+            color: var(--gold-light);
+            margin-bottom: 3rem;
+        }
+
+        .cta-buttons-luxury {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .btn-cta-gold,
+        .btn-cta-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.5rem 3rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border-radius: 50px;
+            transition: var(--transition-bounce);
+        }
+
+        .btn-cta-gold {
+            background: var(--gradient-gold);
+            color: var(--charcoal);
+        }
+
+        .btn-cta-white {
+            background: var(--white);
+            color: var(--charcoal);
+        }
+
+        .btn-cta-gold:hover,
+        .btn-cta-white:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .cta-quick-contact {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .quick-contact {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.05rem;
+            color: var(--gold-light);
+        }
+
+        .quick-contact i {
+            color: var(--gold-primary);
+            font-size: 1.25rem;
+        }
+
+        /* ========== FOOTER ========== */
+        .ultimate-footer {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .footer-main {
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-luxury-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+        }
+
+        .footer-brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .footer-brand-logo h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--white);
+        }
+
+        .footer-brand-logo h3 span {
+            color: var(--gold-primary);
+        }
+
+        .footer-brand-text {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social-luxury {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link-luxury {
+            width: 45px;
+            height: 45px;
+            background: rgba(201, 169, 97, 0.1);
+            border: 2px solid var(--gold-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .social-link-luxury:hover {
+            background: var(--gold-primary);
+            color: var(--charcoal);
+            transform: translateY(-3px);
+        }
+
+        .footer-col-links h4 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-primary);
+        }
+
+        .footer-col-links ul {
+            list-style: none;
+        }
+
+        .footer-col-links ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col-links ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-col-links ul li a:hover {
+            color: var(--gold-primary);
+            padding-left: 0.5rem;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+        }
+
+        .footer-contact-list li {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-contact-list i {
+            color: var(--gold-primary);
+            font-size: 1.25rem;
+            margin-top: 0.25rem;
+        }
+
+        .footer-bottom-luxury {
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .developer-credit {
+            margin: 0;
+        }
+
+        .developer-credit a {
+            color: var(--gold-primary);
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+
+        .developer-credit a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-love {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-love i {
+            color: #ff6b6b;
+        }
+
+        /* ========== SCROLL TO TOP ========== */
+        .scroll-top-luxury {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 55px;
+            height: 55px;
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 50%;
+            color: var(--charcoal);
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+            z-index: 999;
+            box-shadow: var(--shadow-gold);
+        }
+
+        .scroll-top-luxury.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top-luxury:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .products-main-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-luxury-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .luxury-nav-menu {
+                display: none;
+            }
+            
+            .luxury-hamburger {
+                display: flex;
+            }
+            
+            .products-hero-title {
+                font-size: 3rem;
+            }
+            
+            .products-main-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-luxury-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons-luxury {
+                flex-direction: column;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products-hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-heading-luxury {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <nav class="luxury-navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>GreetWell<span>Group</span></h1>
+                        <p class="logo-subtitle">Premium Exports</p>
+                    </div>
+                </div>
+                
+                <ul class="luxury-nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="products.html" class="nav-link active">Products</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-gold-premium">
+                        <span>Get Quote</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="luxury-hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero-section">
+        <div class="products-hero-content">
+            <div class="container">
+                <div class="breadcrumb-luxury" data-aos="fade-down">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Products</span>
+                </div>
+                
+                <h1 class="products-hero-title" data-aos="fade-up" data-aos-delay="200">
+                    Our Premium <span class="title-gold">Product Range</span>
+                </h1>
+                
+                <p class="products-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                    From India's Finest Farms to Your Global Markets
+                </p>
+                
+                <div class="products-hero-features" data-aos="fade-up" data-aos-delay="600">
+                    <div class="hero-feature-item">
+                        <i class="fas fa-certificate"></i>
+                        <span>100% Certified</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>Organic Quality</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <i class="fas fa-globe"></i>
+                        <span>Global Standards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Filter -->
+    <section class="product-filter-section">
+        <div class="container">
+            <div class="filter-tabs-luxury" data-aos="fade-up">
+                <button class="filter-tab active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    <span>All Products</span>
+                </button>
+                <button class="filter-tab" data-filter="spices">
+                    <i class="fas fa-pepper-hot"></i>
+                    <span>Spices</span>
+                </button>
+                <button class="filter-tab" data-filter="vegetables">
+                    <i class="fas fa-carrot"></i>
+                    <span>Vegetables</span>
+                </button>
+                <button class="filter-tab" data-filter="organic">
+                    <i class="fas fa-seedling"></i>
+                    <span>Organic</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Products Grid -->
+    <section class="main-products-section">
+        <div class="container-wide">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Explore Our Range</span>
+                </div>
+                <h2 class="section-heading-luxury">
+                    Premium <span class="heading-highlight">Product Collection</span>
+                </h2>
+                <p class="section-description">
+                    Each product represents our commitment to quality and excellence
+                </p>
+            </div>
+
+            <div class="products-main-grid">
+                <!-- Product Card 1 -->
+                <div class="product-showcase-card" data-category="spices organic" data-aos="fade-up">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=800&q=80" alt="Premium Turmeric">
+                        <div class="product-badges">
+                            <span class="badge-organic"><i class="fas fa-leaf"></i> Organic</span>
+                            <span class="badge-featured"><i class="fas fa-star"></i> Featured</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-pepper-hot"></i>
+                            <span>Premium Spices</span>
+                        </div>
+                        <h3>Premium Turmeric</h3>
+                        <p class="product-short-desc">Golden curcumin excellence with high medicinal value</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> 3-5% Curcumin</li>
+                            <li><i class="fas fa-check"></i> Vibrant Color</li>
+                            <li><i class="fas fa-check"></i> Export Grade</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-showcase-card" data-category="vegetables" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1582515515705-e00f36f87f67?w=800&q=80" alt="Fresh Onions">
+                        <div class="product-badges">
+                            <span class="badge-fresh"><i class="fas fa-seedling"></i> Fresh</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-carrot"></i>
+                            <span>Fresh Vegetables</span>
+                        </div>
+                        <h3>Fresh Onions</h3>
+                        <p class="product-short-desc">Premium red & white varieties with long shelf life</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Multiple Sizes</li>
+                            <li><i class="fas fa-check"></i> Long Shelf Life</li>
+                            <li><i class="fas fa-check"></i> Export Quality</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-showcase-card" data-category="vegetables" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1596097635941-c0146758c97f?w=800&q=80" alt="Fresh Potatoes">
+                        <div class="product-badges">
+                            <span class="badge-premium"><i class="fas fa-award"></i> Premium</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-carrot"></i>
+                            <span>Fresh Vegetables</span>
+                        </div>
+                        <h3>Fresh Potatoes</h3>
+                        <p class="product-short-desc">Superior quality from India's finest potato regions</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Premium Grade</li>
+                            <li><i class="fas fa-check"></i> Excellent Storage</li>
+                            <li><i class="fas fa-check"></i> Various Sizes</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-showcase-card" data-category="vegetables organic" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1552659831-e9d721c35838?w=800&q=80" alt="Fresh Tomatoes">
+                        <div class="product-badges">
+                            <span class="badge-organic"><i class="fas fa-leaf"></i> Organic</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-carrot"></i>
+                            <span>Fresh Vegetables</span>
+                        </div>
+                        <h3>Fresh Tomatoes</h3>
+                        <p class="product-short-desc">Vine-ripened perfection with rich flavor</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Vine Ripened</li>
+                            <li><i class="fas fa-check"></i> Rich Flavor</li>
+                            <li><i class="fas fa-check"></i> Export Grade</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-showcase-card" data-category="vegetables spices" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1583926663785-b6f5551d54b7?w=800&q=80" alt="Green Chilies">
+                        <div class="product-badges">
+                            <span class="badge-hot"><i class="fas fa-fire"></i> Hot</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-pepper-hot"></i>
+                            <span>Spices & Chilies</span>
+                        </div>
+                        <h3>Green Chilies</h3>
+                        <p class="product-short-desc">Perfect heat & flavor balance for every dish</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Multiple Varieties</li>
+                            <li><i class="fas fa-check"></i> Heat Levels</li>
+                            <li><i class="fas fa-check"></i> Fresh & Crisp</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-showcase-card" data-category="spices organic" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1618512496160-28d13b0c562d?w=800&q=80" alt="Fresh Ginger">
+                        <div class="product-badges">
+                            <span class="badge-organic"><i class="fas fa-leaf"></i> Organic</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-pepper-hot"></i>
+                            <span>Premium Spices</span>
+                        </div>
+                        <h3>Fresh Ginger</h3>
+                        <p class="product-short-desc">Aromatic & pungent excellence with high oil content</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> High Oil Content</li>
+                            <li><i class="fas fa-check"></i> Strong Aroma</li>
+                            <li><i class="fas fa-check"></i> Export Quality</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="product-showcase-card" data-category="vegetables" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?w=800&q=80" alt="Garlic">
+                        <div class="product-badges">
+                            <span class="badge-premium"><i class="fas fa-award"></i> Premium</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-carrot"></i>
+                            <span>Fresh Vegetables</span>
+                        </div>
+                        <h3>Premium Garlic</h3>
+                        <p class="product-short-desc">Strong flavor profile with excellent medicinal properties</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Strong Flavor</li>
+                            <li><i class="fas fa-check"></i> Multiple Sizes</li>
+                            <li><i class="fas fa-check"></i> Quality Assured</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="product-showcase-card" data-category="vegetables organic" data-aos="fade-up" data-aos-delay="700">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1587735243475-46d8a083268f?w=800&q=80" alt="Okra">
+                        <div class="product-badges">
+                            <span class="badge-organic"><i class="fas fa-leaf"></i> Organic</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-carrot"></i>
+                            <span>Fresh Vegetables</span>
+                        </div>
+                        <h3>Fresh Okra (Ladyfinger)</h3>
+                        <p class="product-short-desc">Tender and fresh with excellent nutritional value</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Tender & Fresh</li>
+                            <li><i class="fas fa-check"></i> Nutritious</li>
+                            <li><i class="fas fa-check"></i> Export Grade</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 9 -->
+                <div class="product-showcase-card" data-category="vegetables" data-aos="fade-up" data-aos-delay="800">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?w=800&q=80" alt="Eggplant">
+                        <div class="product-badges">
+                            <span class="badge-fresh"><i class="fas fa-seedling"></i> Fresh</span>
+                        </div>
+                    </div>
+                    <div class="product-card-content">
+                        <div class="product-category-tag">
+                            <i class="fas fa-carrot"></i>
+                            <span>Fresh Vegetables</span>
+                        </div>
+                        <h3>Fresh Eggplant (Brinjal)</h3>
+                        <p class="product-short-desc">Premium quality with rich color and firm texture</p>
+                        <ul class="product-features-list">
+                            <li><i class="fas fa-check"></i> Rich Color</li>
+                            <li><i class="fas fa-check"></i> Firm Texture</li>
+                            <li><i class="fas fa-check"></i> Multiple Varieties</li>
+                        </ul>
+                        <div class="product-card-footer">
+                            <div class="product-availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Available</span>
+                            </div>
+                            <a href="contact.html" class="btn-product-quote">
+                                Request Quote
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="ultimate-cta-section">
+        <div class="container">
+            <div class="cta-luxury-content" data-aos="zoom-in">
+                <h2>Ready to Order Premium Products?</h2>
+                <p>Get competitive quotes for bulk orders and experience the GreetWell Group difference</p>
+                
+                <div class="cta-buttons-luxury">
+                    <a href="contact.html" class="btn-cta-gold">
+                        <i class="fas fa-phone"></i>
+                        <span>Request Quote Now</span>
+                    </a>
+                    <a href="services.html" class="btn-cta-white">
+                        <i class="fas fa-cogs"></i>
+                        <span>View Our Services</span>
+                    </a>
+                </div>
+                
+                <div class="cta-quick-contact">
+                    <div class="quick-contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>greetwellimpexperts@gmail.com</span>
+                    </div>
+                    <div class="quick-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9588479681</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate Footer -->
+    <footer class="ultimate-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-luxury-grid">
+                    <div class="footer-col-brand">
+                        <div class="footer-brand-logo">
+                            <div class="footer-logo-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>GreetWell<span>Group</span></h3>
+                        </div>
+                        <p class="footer-brand-text">
+                            Premium agricultural exports from India to the world. Quality you can trust, 
+                            service you can count on.
+                        </p>
+                        <div class="footer-social-luxury">
+                            <a href="#" class="social-link-luxury"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Products</a></li>
+                            <li><a href="services.html"><i class="fas fa-angle-right"></i> Services</a></li>
+                            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-links">
+                        <h4>Our Products</h4>
+                        <ul>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Premium Turmeric</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Onions</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Potatoes</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Tomatoes</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Green Chilies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-contact">
+                        <h4>Contact Info</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>C/o Adwani Publishing House, N-87, Hingana MIDC, Nagpur - 441110</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 9588479681</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>greetwellimpexperts@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM IST</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-luxury">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GreetWell Group. All Rights Reserved.</p>
+                    <p class="developer-credit">
+                        Design & Developed by <a href="https://theunlocksales.github.io/theunlocksales/" target="_blank">The Unlock Sales</a>
+                    </p>
+                    <p class="footer-love">Crafted with <i class="fas fa-heart"></i> for Excellence</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Luxury -->
+    <button class="scroll-top-luxury" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // ==========================================
+        // INLINE JAVASCRIPT FOR PRODUCTS PAGE
+        // ==========================================
+        
+        'use strict';
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Product Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const productCards = document.querySelectorAll('.product-showcase-card');
+            
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Update active tab
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter products
+                    productCards.forEach(card => {
+                        const categories = card.getAttribute('data-category');
+                        
+                        if (filterValue === 'all' || categories.includes(filterValue)) {
+                            card.classList.remove('hidden');
+                            card.style.animation = 'fadeInUp 0.6s ease forwards';
+                        } else {
+                            card.classList.add('hidden');
+                        }
+                    });
+                });
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+
+        console.log('%c🛍️ Products Page Loaded Successfully', 'color: #c9a961; font-size: 16px; font-weight: bold;');
+    </script>
+</body>
+</html>

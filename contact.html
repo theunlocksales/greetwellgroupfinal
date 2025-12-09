@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreetWell Group | Get in Touch for Export Solutions</title>
+    <meta name="description" content="Contact GreetWell Group for premium agricultural export services. Get quotes, ask questions, or schedule a consultation with our expert team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ==========================================
+           INLINE CSS FOR CONTACT PAGE - MASTERPIECE
+           ========================================== */
+        
+        :root {
+            --charcoal: #1a1a1a;
+            --cream: #faf7f2;
+            --cream-dark: #f0ebe0;
+            --white: #ffffff;
+            --gold-primary: #c9a961;
+            --gold-light: #f4e4c1;
+            --gold-dark: #a68a4d;
+            --gold-metallic: #d4af37;
+            --accent-green: #4a7c59;
+            --accent-green-light: #6ba582;
+            --gray-text: #6a6a6a;
+            --gradient-gold: linear-gradient(135deg, #c9a961 0%, #f4e4c1 50%, #c9a961 100%);
+            --gradient-green: linear-gradient(135deg, #2d4a2d 0%, #4a7c59 100%);
+            --gradient-luxury: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%);
+            --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+            --shadow-medium: 0 10px 40px rgba(0, 0, 0, 0.12);
+            --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.2);
+            --shadow-gold: 0 8px 32px rgba(201, 169, 97, 0.3);
+            --transition-smooth: all 0.3s ease;
+            --transition-ultra: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --font-display: 'Cinzel', serif;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.6;
+            color: var(--charcoal);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .container-wide {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* ========== NAVIGATION ========== */
+        .luxury-navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: var(--transition-smooth);
+            background: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .logo-text h1 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .logo-text h1 span {
+            color: var(--gold-primary);
+        }
+
+        .logo-subtitle {
+            font-size: 0.75rem;
+            color: var(--gold-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .luxury-nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+
+        .nav-link {
+            color: var(--white);
+            font-weight: 600;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: var(--transition-smooth);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .btn-gold-premium {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: var(--gradient-gold);
+            color: var(--charcoal);
+            font-weight: 700;
+            border-radius: 50px;
+            transition: var(--transition-bounce);
+        }
+
+        .btn-gold-premium:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .luxury-hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .luxury-hamburger span {
+            width: 30px;
+            height: 3px;
+            background: var(--gold-primary);
+            border-radius: 3px;
+            transition: var(--transition-smooth);
+        }
+
+        /* ========== CONTACT HERO ========== */
+        .contact-hero-section {
+            position: relative;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%);
+            overflow: hidden;
+            padding-top: 100px;
+        }
+
+        .contact-hero-content {
+            text-align: center;
+            color: var(--white);
+            position: relative;
+            z-index: 3;
+            padding: 4rem 0;
+        }
+
+        .breadcrumb-luxury {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.75rem 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .breadcrumb-luxury a {
+            color: var(--gold-light);
+        }
+
+        .contact-hero-title {
+            font-family: var(--font-display);
+            font-size: 4.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .title-gold {
+            color: var(--gold-primary);
+        }
+
+        .contact-hero-subtitle {
+            font-size: 1.35rem;
+            color: var(--gold-metallic);
+            letter-spacing: 2px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ========== QUICK CONTACT CARDS ========== */
+        .quick-contact-section {
+            padding: 4rem 0;
+            background: var(--cream);
+            margin-top: -4rem;
+            position: relative;
+            z-index: 5;
+        }
+
+        .quick-contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .quick-contact-card {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--white);
+            border-radius: 25px;
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition-ultra);
+            border: 2px solid transparent;
+        }
+
+        .quick-contact-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--gold-primary);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .quick-contact-icon {
+            width: 90px;
+            height: 90px;
+            background: var(--gradient-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            font-size: 2.5rem;
+            color: var(--white);
+            box-shadow: var(--shadow-medium);
+            transition: var(--transition-bounce);
+        }
+
+        .quick-contact-card:hover .quick-contact-icon {
+            transform: scale(1.15) rotate(360deg);
+            background: var(--gradient-gold);
+            color: var(--charcoal);
+        }
+
+        .quick-contact-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+
+        .quick-contact-card p {
+            color: var(--gray-text);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .quick-contact-value {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: rgba(74, 124, 89, 0.1);
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--accent-green);
+            font-size: 0.95rem;
+            word-break: break-word;
+        }
+
+        /* ========== MAIN CONTACT SECTION ========== */
+        .main-contact-section {
+            padding: 6rem 0;
+            background: var(--white);
+        }
+
+        .contact-main-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 5rem;
+            align-items: start;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 2rem;
+            background: rgba(74, 124, 89, 0.1);
+            border: 2px solid var(--accent-green);
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form-wrapper h2 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .contact-form-wrapper > p {
+            font-size: 1.15rem;
+            color: var(--gray-text);
+            line-height: 1.9;
+            margin-bottom: 3rem;
+        }
+
+        .luxury-contact-form {
+            background: var(--cream);
+            padding: 3.5rem;
+            border-radius: 30px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 700;
+            color: var(--charcoal);
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+        }
+
+        .form-label .required {
+            color: #dc3545;
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            border: 2px solid var(--cream-dark);
+            border-radius: 15px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            color: var(--charcoal);
+            background: var(--white);
+            transition: var(--transition-smooth);
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 4px rgba(201, 169, 97, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .btn-submit-luxury {
+            width: 100%;
+            padding: 1.5rem 3rem;
+            background: var(--gradient-green);
+            color: var(--white);
+            border: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: var(--transition-bounce);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn-submit-luxury:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .btn-submit-luxury:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .form-message {
+            margin-top: 1.5rem;
+            padding: 1.25rem;
+            border-radius: 15px;
+            font-weight: 600;
+            display: none;
+        }
+
+        .form-message.success {
+            background: rgba(74, 124, 89, 0.1);
+            border: 2px solid var(--accent-green);
+            color: var(--accent-green);
+            display: block;
+        }
+
+        .form-message.error {
+            background: rgba(220, 53, 69, 0.1);
+            border: 2px solid #dc3545;
+            color: #dc3545;
+            display: block;
+        }
+
+        /* ========== CONTACT INFO SIDEBAR ========== */
+        .contact-info-sidebar {
+            position: sticky;
+            top: 120px;
+        }
+
+        .contact-info-card {
+            background: var(--gradient-luxury);
+            color: var(--white);
+            padding: 3.5rem 3rem;
+            border-radius: 30px;
+            box-shadow: var(--shadow-heavy);
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-card h3 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--gold-primary);
+        }
+
+        .contact-info-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-info-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .contact-info-item i {
+            font-size: 2rem;
+            color: var(--gold-primary);
+            margin-top: 0.25rem;
+        }
+
+        .contact-info-item strong {
+            display: block;
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: var(--gold-light);
+        }
+
+        .contact-info-item span {
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.8;
+        }
+
+        .business-hours-card {
+            background: var(--cream);
+            padding: 3rem 2.5rem;
+            border-radius: 25px;
+            box-shadow: var(--shadow-soft);
+        }
+
+        .business-hours-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            color: var(--charcoal);
+            text-align: center;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--cream-dark);
+        }
+
+        .hours-item:last-child {
+            border-bottom: none;
+        }
+
+        .hours-day {
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+
+        .hours-time {
+            color: var(--accent-green);
+            font-weight: 600;
+        }
+
+        .hours-time.closed {
+            color: #dc3545;
+        }
+
+        /* ========== MAP SECTION ========== */
+        .map-section {
+            padding: 6rem 0;
+            background: var(--cream);
+        }
+
+        .section-header-luxury {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-heading-luxury {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--charcoal);
+        }
+
+        .heading-highlight {
+            color: var(--accent-green);
+        }
+
+        .section-description {
+            font-size: 1.15rem;
+            color: var(--gray-text);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .map-container {
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: var(--shadow-heavy);
+            height: 500px;
+            background: var(--white);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* ========== FAQ SECTION ========== */
+        .faq-section {
+            padding: 6rem 0;
+            background: var(--white);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .faq-item {
+            background: var(--cream);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition-smooth);
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-medium);
+        }
+
+        .faq-question {
+            padding: 2rem 2.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            transition: var(--transition-smooth);
+        }
+
+        .faq-question:hover {
+            background: var(--cream);
+        }
+
+        .faq-question h4 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            flex: 1;
+        }
+
+        .faq-toggle {
+            width: 35px;
+            height: 35px;
+            background: var(--gradient-gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            color: var(--charcoal);
+            transition: var(--transition-bounce);
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 2.5rem 2rem 2.5rem;
+            color: var(--gray-text);
+            line-height: 1.9;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        /* ========== SOCIAL SECTION ========== */
+        .social-section {
+            padding: 6rem 0;
+            background: var(--gradient-luxury);
+            text-align: center;
+            color: var(--white);
+        }
+
+        .social-section h2 {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-section p {
+            font-size: 1.2rem;
+            color: var(--gold-light);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .social-links-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .social-link-mega {
+            width: 100px;
+            height: 100px;
+            background: rgba(201, 169, 97, 0.1);
+            backdrop-filter: blur(20px);
+            border: 3px solid var(--gold-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--gold-primary);
+            transition: var(--transition-bounce);
+        }
+
+        .social-link-mega:hover {
+            transform: translateY(-10px) scale(1.1);
+            background: var(--gradient-gold);
+            color: var(--charcoal);
+            box-shadow: var(--shadow-gold);
+        }
+
+        /* ========== FOOTER ========== */
+        .ultimate-footer {
+            background: var(--charcoal);
+            color: var(--white);
+        }
+
+        .footer-main {
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-luxury-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+        }
+
+        .footer-brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-logo-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-gold);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--charcoal);
+        }
+
+        .footer-brand-logo h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            color: var(--white);
+        }
+
+        .footer-brand-logo h3 span {
+            color: var(--gold-primary);
+        }
+
+        .footer-brand-text {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social-luxury {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-link-luxury {
+            width: 45px;
+            height: 45px;
+            background: rgba(201, 169, 97, 0.1);
+            border: 2px solid var(--gold-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-primary);
+            transition: var(--transition-smooth);
+        }
+
+        .social-link-luxury:hover {
+            background: var(--gold-primary);
+            color: var(--charcoal);
+            transform: translateY(-3px);
+        }
+
+        .footer-col-links h4 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold-primary);
+        }
+
+        .footer-col-links ul {
+            list-style: none;
+        }
+
+        .footer-col-links ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col-links ul li a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition-smooth);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-col-links ul li a:hover {
+            color: var(--gold-primary);
+            padding-left: 0.5rem;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+        }
+
+        .footer-contact-list li {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .footer-contact-list i {
+            color: var(--gold-primary);
+            font-size: 1.25rem;
+            margin-top: 0.25rem;
+        }
+
+        .footer-bottom-luxury {
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .developer-credit {
+            margin: 0;
+        }
+
+        .developer-credit a {
+            color: var(--gold-primary);
+            font-weight: 700;
+            transition: var(--transition-smooth);
+        }
+
+        .developer-credit a:hover {
+            color: var(--gold-light);
+        }
+
+        .footer-love {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-love i {
+            color: #ff6b6b;
+        }
+
+        /* ========== SCROLL TO TOP ========== */
+        .scroll-top-luxury {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 55px;
+            height: 55px;
+            background: var(--gradient-gold);
+            border: none;
+            border-radius: 50%;
+            color: var(--charcoal);
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-smooth);
+            z-index: 999;
+            box-shadow: var(--shadow-gold);
+        }
+
+        .scroll-top-luxury.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top-luxury:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1200px) {
+            .quick-contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .contact-main-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .contact-info-sidebar {
+                position: relative;
+                top: 0;
+            }
+
+            .footer-luxury-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .luxury-nav-menu {
+                display: none;
+            }
+            
+            .luxury-hamburger {
+                display: flex;
+            }
+            
+            .contact-hero-title {
+                font-size: 3rem;
+            }
+
+            .quick-contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .luxury-contact-form {
+                padding: 2.5rem 2rem;
+            }
+
+            .section-heading-luxury {
+                font-size: 2.5rem;
+            }
+
+            .footer-luxury-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-bottom-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-heading-luxury {
+                font-size: 2rem;
+            }
+
+            .contact-form-wrapper h2 {
+                font-size: 2.5rem;
+            }
+
+            .map-container {
+                height: 350px;
+            }
+        }
+
+        /* ========== LOADING ANIMATION ========== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Premium Navigation -->
+    <nav class="luxury-navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="brand-logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>GreetWell<span>Group</span></h1>
+                        <p class="logo-subtitle">Premium Exports</p>
+                    </div>
+                </div>
+                
+                <ul class="luxury-nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="products.html" class="nav-link">Products</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-gold-premium">
+                        <span>Get Quote</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="luxury-hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero-section">
+        <div class="contact-hero-content">
+            <div class="container">
+                <div class="breadcrumb-luxury" data-aos="fade-down">
+                    <a href="index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Contact Us</span>
+                </div>
+                
+                <h1 class="contact-hero-title" data-aos="fade-up" data-aos-delay="200">
+                    Let's Start a <span class="title-gold">Conversation</span>
+                </h1>
+                
+                <p class="contact-hero-subtitle" data-aos="fade-up" data-aos-delay="400">
+                    We're here to answer your questions and help you succeed
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="quick-contact-section">
+        <div class="container-wide">
+            <div class="quick-contact-grid">
+                <div class="quick-contact-card" data-aos="fade-up">
+                    <div class="quick-contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our team</p>
+                    <span class="quick-contact-value">+91 9588479681</span>
+                </div>
+
+                <div class="quick-contact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="quick-contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us your queries anytime</p>
+                    <span class="quick-contact-value">greetwellimpexperts@gmail.com</span>
+                </div>
+
+                <div class="quick-contact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quick-contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>Chat with us instantly</p>
+                    <span class="quick-contact-value">+91 9588479681</span>
+                </div>
+
+                <div class="quick-contact-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="quick-contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Come see our operations</p>
+                    <span class="quick-contact-value">Nagpur, India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="main-contact-section">
+        <div class="container">
+            <div class="contact-main-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper" data-aos="fade-right">
+                    <div class="section-label">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </div>
+                    <h2>Get in Touch</h2>
+                    <p>
+                        Fill out the form below and our team will get back to you within 24 hours. 
+                        We're excited to hear about your requirements and help you grow your business.
+                    </p>
+
+                    <form class="luxury-contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Full Name <span class="required">*</span></label>
+                                <input type="text" class="form-input" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email Address <span class="required">*</span></label>
+                                <input type="email" class="form-input" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Phone Number <span class="required">*</span></label>
+                                <input type="tel" class="form-input" name="phone" required placeholder="+91 98765 43210">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Company Name</label>
+                                <input type="text" class="form-input" name="company" placeholder="Your Company Ltd.">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Subject <span class="required">*</span></label>
+                            <select class="form-select" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="product-inquiry">Product Inquiry</option>
+                                <option value="quote-request">Quote Request</option>
+                                <option value="bulk-order">Bulk Order</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="support">Customer Support</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message <span class="required">*</span></label>
+                            <textarea class="form-textarea" name="message" required placeholder="Tell us about your requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit-luxury">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-info-sidebar" data-aos="fade-left">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        <ul class="contact-info-list">
+                            <li class="contact-info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address</strong>
+                                    <span>C/o Adwani Publishing House, N-87, Hingana MIDC, Nagpur - 441110, Maharashtra, India</span>
+                                </div>
+                            </li>
+                            <li class="contact-info-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <span>+91 9588479681</span>
+                                </div>
+                            </li>
+                            <li class="contact-info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>greetwellimpexperts@gmail.com</span>
+                                </div>
+                            </li>
+                            <li class="contact-info-item">
+                                <i class="fas fa-globe"></i>
+                                <div>
+                                    <strong>Website</strong>
+                                    <span>www.greetwellgroup.com</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="business-hours-card">
+                        <h3>Business Hours</h3>
+                        <ul class="hours-list">
+                            <li class="hours-item">
+                                <span class="hours-day">Monday</span>
+                                <span class="hours-time">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="hours-item">
+                                <span class="hours-day">Tuesday</span>
+                                <span class="hours-time">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="hours-item">
+                                <span class="hours-day">Wednesday</span>
+                                <span class="hours-time">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="hours-item">
+                                <span class="hours-day">Thursday</span>
+                                <span class="hours-time">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="hours-item">
+                                <span class="hours-day">Friday</span>
+                                <span class="hours-time">9:00 AM - 6:00 PM</span>
+                            </li>
+                            <li class="hours-item">
+                                <span class="hours-day">Saturday</span>
+                                <span class="hours-time">9:00 AM - 1:00 PM</span>
+                            </li>
+                            <li class="hours-item">
+                                <span class="hours-day">Sunday</span>
+                                <span class="hours-time closed">Closed</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-map"></i>
+                    <span>Find Us</span>
+                </div>
+                <h2 class="section-heading-luxury">
+                    Our <span class="heading-highlight">Location</span>
+                </h2>
+                <p class="section-description">
+                    Visit our office in Nagpur, India. We're always happy to meet in person!
+                </p>
+            </div>
+
+            <div class="map-container" data-aos="zoom-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.015883891234!2d79.0881637!3d21.0450529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1e0e0e0e0e0%3A0x0!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQ</span>
+                </div>
+                <h2 class="section-heading-luxury">
+                    Frequently Asked <span class="heading-highlight">Questions</span>
+                </h2>
+                <p class="section-description">
+                    Find quick answers to common questions about our services and processes
+                </p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up">
+                    <div class="faq-question">
+                        <h4>What is your minimum order quantity?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Our minimum order quantity varies by product. For most agricultural products, we can accommodate orders starting from a 20-foot container. For specific requirements, please contact us for customized solutions.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h4>How long does shipping typically take?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Shipping time depends on your destination. Generally, sea freight takes 15-30 days depending on the port, while air freight takes 5-7 days. We provide real-time tracking for all shipments.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h4>Do you provide organic certifications?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, we provide various certifications including Organic (NPOP & NOP), ISO 9001:2015, FSSAI, and other certifications as required by your country's import regulations.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h4>Can you handle custom packaging and labeling?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Absolutely! We offer complete custom packaging and private labeling services. You can use your own brand name, logo, and packaging design to meet your market requirements.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h4>What payment methods do you accept?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            We accept various payment methods including Letter of Credit (LC), Telegraphic Transfer (TT), and other internationally accepted payment terms. Payment terms are flexible and can be discussed based on order size.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question">
+                        <h4>Do you provide product samples?</h4>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Yes, we can provide samples for quality evaluation. Sample costs and shipping charges may apply, which can be adjusted against your first bulk order. Contact us to request samples.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section -->
+    <section class="social-section">
+        <div class="container">
+            <div data-aos="zoom-in">
+                <h2>Connect With Us</h2>
+                <p>Follow us on social media for updates, news, and industry insights</p>
+                
+                <div class="social-links-grid">
+                    <a href="#" class="social-link-mega" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link-mega" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link-mega" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link-mega" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link-mega" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate Footer -->
+    <footer class="ultimate-footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-luxury-grid">
+                    <div class="footer-col-brand">
+                        <div class="footer-brand-logo">
+                            <div class="footer-logo-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>GreetWell<span>Group</span></h3>
+                        </div>
+                        <p class="footer-brand-text">
+                            Premium agricultural exports from India to the world. Quality you can trust, 
+                            service you can count on. Building global partnerships one shipment at a time.
+                        </p>
+                        <div class="footer-social-luxury">
+                            <a href="#" class="social-link-luxury"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-col-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Products</a></li>
+                            <li><a href="services.html"><i class="fas fa-angle-right"></i> Services</a></li>
+                            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-links">
+                        <h4>Our Products</h4>
+                        <ul>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Premium Turmeric</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Onions</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Potatoes</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Tomatoes</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Green Chilies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-contact">
+                        <h4>Contact Info</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>C/o Adwani Publishing House, N-87, Hingana MIDC, Nagpur - 441110</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 9588479681</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>greetwellimpexperts@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM IST</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-luxury">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GreetWell Group. All Rights Reserved.</p>
+                    <p class="developer-credit">
+                        Design & Developed by <a href="https://theunlocksales.github.io/theunlocksales/" target="_blank">The Unlock Sales</a>
+                    </p>
+                    <p class="footer-love">Crafted with <i class="fas fa-heart"></i> for Excellence</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Luxury -->
+    <button class="scroll-top-luxury" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // ==========================================
+        // INLINE JAVASCRIPT FOR CONTACT PAGE
+        // ==========================================
+        
+        'use strict';
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.btn-submit-luxury');
+            const originalHTML = submitBtn.innerHTML;
+            
+            // Disable button and show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+            
+            // Simulate form submission (replace with actual API call)
+            setTimeout(() => {
+                // Success message
+                formMessage.className = 'form-message success';
+                formMessage.textContent = '✓ Thank you! Your message has been sent successfully. We\'ll get back to you within 24 hours.';
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Re-enable button
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalHTML;
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }, 2000);
+            
+            // For actual implementation, use:
+            /*
+            try {
+                const formData = new FormData(this);
+                const response = await fetch('your-api-endpoint', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    formMessage.className = 'form-message success';
+                    formMessage.textContent = 'Message sent successfully!';
+                    contactForm.reset();
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch (error) {
+                formMessage.className = 'form-message error';
+                formMessage.textContent = 'Something went wrong. Please try again.';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalHTML;
+            }
+            */
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                if (isActive) {
+                    item.classList.remove('active');
+                } else {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+
+        // Form Input Animations
+        const formInputs = document.querySelectorAll('.form-input, .form-select, .form-textarea');
+        
+        formInputs.forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'translateY(-2px)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        console.log('%c📧 Contact Page Loaded Successfully - The Final Masterpiece!', 'color: #c9a961; font-size: 18px; font-weight: bold;');
+        console.log('%c🙏 Thank you for this amazing journey!', 'color: #4a7c59; font-size: 14px; font-weight: bold;');
+    </script>
+</body>
+</html>
