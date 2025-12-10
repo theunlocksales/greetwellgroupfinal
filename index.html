@@ -2,735 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>GreetWell Group - Premium Agricultural Exports from India</title>
-    <meta name="description" content="Leading exporter of premium quality agricultural products from India including turmeric, spices, vegetables, and organic produce to global markets.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreetWell Group - India's Premier Agricultural Exports</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        /* ==========================================
-           MOBILE-FIRST RESPONSIVE CSS - FIXED
-           ========================================== */
-        
-        :root {
-            --charcoal: #1a1a1a;
-            --cream: #faf7f2;
-            --cream-dark: #f0ebe0;
-            --white: #ffffff;
-            --gold-primary: #c9a961;
-            --gold-light: #f4e4c1;
-            --gold-dark: #a68a4d;
-            --accent-green: #4a7c59;
-            --gray-text: #6a6a6a;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            line-height: 1.6;
-            color: var(--charcoal);
-            background: var(--white);
-            overflow-x: hidden;
-            width: 100%;
-            max-width: 100vw;
-        }
-
-        /* Prevent text overflow */
-        h1, h2, h3, h4, h5, h6, p, span, div {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            max-width: 100%;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1rem;
-            width: 100%;
-        }
-
-        /* ========== NAVIGATION ========== */
-        .luxury-navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(26, 26, 26, 0.95);
-            backdrop-filter: blur(20px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-
-        .brand-logo {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            z-index: 1001;
-        }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #c9a961 0%, #f4e4c1 50%, #c9a961 100%);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            color: var(--charcoal);
-            flex-shrink: 0;
-        }
-
-        .logo-text h1 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.25rem;
-            color: var(--white);
-            font-weight: 700;
-            white-space: nowrap;
-        }
-
-        .logo-text h1 span {
-            color: var(--gold-primary);
-        }
-
-        .logo-subtitle {
-            font-size: 0.65rem;
-            color: var(--gold-light);
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            display: none;
-        }
-
-        /* Mobile Menu */
-        .luxury-nav-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            max-width: 300px;
-            height: 100vh;
-            background: var(--charcoal);
-            display: flex;
-            flex-direction: column;
-            padding: 6rem 2rem 2rem;
-            gap: 1.5rem;
-            list-style: none;
-            transition: right 0.3s ease;
-            z-index: 1000;
-            overflow-y: auto;
-        }
-
-        .luxury-nav-menu.active {
-            right: 0;
-        }
-
-        .nav-link {
-            color: var(--white);
-            font-weight: 600;
-            font-size: 1.1rem;
-            padding: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .nav-link:hover,
-        .nav-link.active {
-            color: var(--gold-primary);
-            padding-left: 1.5rem;
-        }
-
-        .luxury-hamburger {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            z-index: 1001;
-            padding: 0.5rem;
-        }
-
-        .luxury-hamburger span {
-            width: 25px;
-            height: 3px;
-            background: var(--gold-primary);
-            border-radius: 3px;
-            transition: all 0.3s ease;
-        }
-
-        .luxury-hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(8px, 8px);
-        }
-
-        .luxury-hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .luxury-hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        .nav-actions {
-            display: none;
-        }
-
-        /* ========== HERO SECTION ========== */
-        .hero-section {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%);
-            padding: 6rem 0 3rem;
-            margin-top: 70px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-content {
-            text-align: center;
-            color: var(--white);
-            position: relative;
-            z-index: 2;
-            width: 100%;
-        }
-
-        .hero-label {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            letter-spacing: 1px;
-        }
-
-        .hero-title {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            font-weight: 900;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-        }
-
-        .title-gold {
-            color: var(--gold-primary);
-        }
-
-        .hero-subtitle {
-            font-size: 1rem;
-            color: var(--gold-light);
-            margin-bottom: 2rem;
-            line-height: 1.6;
-        }
-
-        .hero-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-bottom: 2rem;
-            align-items: center;
-        }
-
-        .btn-primary,
-        .btn-secondary {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            padding: 1rem 2rem;
-            font-weight: 700;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-            width: 100%;
-            max-width: 280px;
-            font-size: 0.95rem;
-        }
-
-        .btn-primary {
-            background: linear-gradient(135deg, #c9a961 0%, #f4e4c1 50%, #c9a961 100%);
-            color: var(--charcoal);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--white);
-            border: 2px solid var(--gold-primary);
-        }
-
-        .hero-stats {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            margin-top: 3rem;
-        }
-
-        .stat-card {
-            padding: 1.5rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-        }
-
-        .stat-number {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            font-weight: 900;
-            color: var(--gold-primary);
-            display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--white);
-        }
-
-        /* ========== PRODUCTS SECTION ========== */
-        .products-section {
-            padding: 3rem 0;
-            background: var(--cream);
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 2.5rem;
-        }
-
-        .section-label {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            background: rgba(74, 124, 89, 0.1);
-            border: 2px solid var(--accent-green);
-            border-radius: 50px;
-            font-weight: 700;
-            color: var(--accent-green);
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-        }
-
-        .section-heading {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: var(--charcoal);
-        }
-
-        .heading-highlight {
-            color: var(--accent-green);
-        }
-
-        .section-description {
-            font-size: 0.95rem;
-            color: var(--gray-text);
-            line-height: 1.6;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-
-        .product-card {
-            background: var(--white);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-        }
-
-        .product-image {
-            position: relative;
-            height: 200px;
-            overflow: hidden;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .product-badge {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            padding: 0.5rem 1rem;
-            background: var(--accent-green);
-            color: var(--white);
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        .product-content {
-            padding: 1.5rem;
-        }
-
-        .product-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: var(--charcoal);
-        }
-
-        .product-content p {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-            line-height: 1.6;
-        }
-
-        .btn-view-product {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(135deg, #c9a961 0%, #f4e4c1 50%, #c9a961 100%);
-            color: var(--charcoal);
-            font-weight: 700;
-            border-radius: 50px;
-            font-size: 0.85rem;
-        }
-
-        /* ========== SERVICES SECTION ========== */
-        .services-section {
-            padding: 3rem 0;
-            background: var(--white);
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1.5rem;
-        }
-
-        .service-card {
-            padding: 2rem 1.5rem;
-            background: var(--cream);
-            border-radius: 20px;
-            text-align: center;
-        }
-
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #2d4a2d 0%, #4a7c59 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 2rem;
-            color: var(--white);
-        }
-
-        .service-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--charcoal);
-        }
-
-        .service-card p {
-            color: var(--gray-text);
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        /* ========== CTA SECTION ========== */
-        .cta-section {
-            padding: 3rem 0;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d4a2d 100%);
-            text-align: center;
-            color: var(--white);
-        }
-
-        .cta-section h2 {
-            font-family: 'Cinzel', serif;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .cta-section p {
-            font-size: 1rem;
-            color: var(--gold-light);
-            margin-bottom: 2rem;
-        }
-
-        .cta-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        /* ========== FOOTER ========== */
-        .footer {
-            background: var(--charcoal);
-            color: var(--white);
-            padding: 2rem 0 1rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-col h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            color: var(--gold-primary);
-        }
-
-        .footer-col ul {
-            list-style: none;
-        }
-
-        .footer-col ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-col ul li a {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.9rem;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .social-link {
-            width: 40px;
-            height: 40px;
-            background: rgba(201, 169, 97, 0.1);
-            border: 2px solid var(--gold-primary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gold-primary);
-        }
-
-        .footer-bottom {
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            text-align: center;
-            font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .developer-credit {
-            margin-top: 0.5rem;
-        }
-
-        .developer-credit a {
-            color: var(--gold-primary);
-            font-weight: 700;
-        }
-
-        /* ========== SCROLL TO TOP ========== */
-        .scroll-top {
-            position: fixed;
-            bottom: 2rem;
-            right: 1rem;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #c9a961 0%, #f4e4c1 50%, #c9a961 100%);
-            border: none;
-            border-radius: 50%;
-            color: var(--charcoal);
-            font-size: 1.25rem;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            z-index: 999;
-        }
-
-        .scroll-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* ========== TABLET (768px+) ========== */
-        @media (min-width: 768px) {
-            .container {
-                padding: 0 2rem;
-            }
-
-            .logo-text h1 {
-                font-size: 1.5rem;
-            }
-
-            .logo-subtitle {
-                display: block;
-            }
-
-            .hero-title {
-                font-size: 3rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.2rem;
-            }
-
-            .hero-buttons {
-                flex-direction: row;
-                justify-content: center;
-            }
-
-            .hero-stats {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 1.5rem;
-            }
-
-            .section-heading {
-                font-size: 2.5rem;
-            }
-
-            .products-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2rem;
-            }
-
-            .footer-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 2.5rem;
-            }
-
-            .cta-buttons {
-                flex-direction: row;
-                justify-content: center;
-            }
-        }
-
-        /* ========== DESKTOP (1024px+) ========== */
-        @media (min-width: 1024px) {
-            .luxury-hamburger {
-                display: none;
-            }
-
-            .luxury-nav-menu {
-                position: static;
-                width: auto;
-                height: auto;
-                background: transparent;
-                flex-direction: row;
-                padding: 0;
-                gap: 2.5rem;
-            }
-
-            .nav-link {
-                padding: 0;
-                border-bottom: none;
-                font-size: 1rem;
-                position: relative;
-            }
-
-            .nav-link::after {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 0;
-                height: 2px;
-                background: var(--gold-primary);
-                transition: width 0.3s ease;
-            }
-
-            .nav-link:hover::after,
-            .nav-link.active::after {
-                width: 100%;
-            }
-
-            .nav-link:hover,
-            .nav-link.active {
-                padding-left: 0;
-            }
-
-            .nav-actions {
-                display: block;
-            }
-
-            .hero-section {
-                margin-top: 0;
-            }
-
-            .hero-title {
-                font-size: 4.5rem;
-            }
-
-            .hero-subtitle {
-                font-size: 1.35rem;
-            }
-
-            .hero-stats {
-                grid-template-columns: repeat(4, 1fr);
-            }
-
-            .products-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2.5rem;
-            }
-
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 2.5rem;
-            }
-
-            .footer-grid {
-                grid-template-columns: 2fr 1fr 1fr 1.5fr;
-            }
-        }
-    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="luxury-navbar">
+    <!-- Luxury Preloader -->
+    <div class="luxury-preloader">
+        <div class="preloader-inner">
+            <div class="luxury-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <h2 class="preloader-brand">
+                <i class="fas fa-leaf"></i>
+                GreetWell<span>Group</span>
+            </h2>
+            <p class="preloader-tagline">Loading Premium Excellence</p>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Premium Navigation -->
+    <nav class="luxury-navbar" id="navbar">
+        <div class="navbar-background"></div>
         <div class="container">
             <div class="nav-wrapper">
                 <div class="brand-logo">
@@ -738,7 +40,7 @@
                         <i class="fas fa-leaf"></i>
                     </div>
                     <div class="logo-text">
-                        <h1>GreetWell<span>Group</span></h1>
+                        <h1>GreetWell<span class="gold-text">Group</span></h1>
                         <p class="logo-subtitle">Premium Exports</p>
                     </div>
                 </div>
@@ -752,7 +54,7 @@
                 </ul>
                 
                 <div class="nav-actions">
-                    <a href="contact.html" class="btn-primary">
+                    <a href="contact.html" class="btn-gold-premium">
                         <span>Get Quote</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -767,277 +69,945 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
+    <!-- Ultimate Hero Section -->
+    <section class="ultimate-hero">
+        <div class="hero-video-wrapper">
+            <video autoplay muted loop playsinline class="hero-video-bg">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-golden-turmeric-powder-in-a-wooden-spoon-43545-large.mp4" type="video/mp4">
+            </video>
+            <div class="hero-gradient-overlay"></div>
+        </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-elements">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+            <div class="floating-element element-4"></div>
+            <div class="floating-element element-5"></div>
+        </div>
+        
+        <!-- Luxury Particles -->
+        <canvas id="luxuryParticles" class="luxury-particles"></canvas>
+        
+        <div class="hero-content-ultimate">
+            <div class="container">
+                <!-- Premium Badge -->
+                <div class="hero-premium-badge" data-aos="zoom-in">
+                    <i class="fas fa-award"></i>
+                    <span>Premium Quality Since Inception</span>
+                </div>
+                
+                <!-- Main Hero Content -->
+                <div class="hero-main-content">
+                    <h1 class="hero-title-ultimate" data-aos="fade-up" data-aos-delay="200">
+                        Exporting India's
+                        <br>
+                        <span class="title-highlight">Finest Harvest</span>
+                        <br>
+                        To The World
+                    </h1>
+                    
+                    <p class="hero-subtitle-ultimate" data-aos="fade-up" data-aos-delay="400">
+                        Premium Vegetables & Golden Turmeric | Globally Trusted Excellence
+                    </p>
+                    
+                    <!-- Hero Features -->
+                    <div class="hero-features-row" data-aos="fade-up" data-aos-delay="600">
+                        <div class="hero-feature-badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Organic</span>
+                        </div>
+                        <div class="hero-feature-badge">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>Global Delivery</span>
+                        </div>
+                        <div class="hero-feature-badge">
+                            <i class="fas fa-tag"></i>
+                            <span>Best Prices</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero CTAs -->
+                    <div class="hero-cta-group" data-aos="zoom-in" data-aos-delay="800">
+                        <a href="#products" class="btn-hero-gold">
+                            <span>Explore Products</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="contact.html" class="btn-hero-outline">
+                            <i class="fas fa-envelope"></i>
+                            <span>Request Quote</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Stats -->
+                <div class="hero-stats-luxury" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="hero-stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="stat-number">50+</h3>
+                        <p class="stat-label">Countries Served</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3 class="stat-number">1000+</h3>
+                        <p class="stat-label">Tons Exported</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3 class="stat-number">99%</h3>
+                        <p class="stat-label">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Luxury Scroll Indicator -->
+        <div class="luxury-scroll-indicator">
+            <div class="scroll-text">Discover More</div>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Trust Badges -->
+    <section class="premium-trust-section">
         <div class="container">
-            <div class="hero-content">
-                <span class="hero-label">🌾 India's Premium Agricultural Exports</span>
-                
-                <h1 class="hero-title">
-                    Quality You Can <span class="title-gold">Trust</span>
-                </h1>
-                
-                <p class="hero-subtitle">
-                    Exporting India's finest agricultural products to the world with uncompromising quality standards
-                </p>
-                
-                <div class="hero-buttons">
-                    <a href="products.html" class="btn-primary">
-                        <span>View Products</span>
+            <div class="trust-badges-luxury">
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="trust-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <span>ISO Certified</span>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="trust-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <span>100% Organic</span>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="trust-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span>Global Export</span>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="trust-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <span>Timely Delivery</span>
+                </div>
+                <div class="trust-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="trust-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <span>Premium Quality</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Welcome Section -->
+    <section class="luxury-welcome-section">
+        <div class="section-bg-pattern"></div>
+        <div class="container">
+            <div class="welcome-luxury-grid">
+                <!-- Content Side -->
+                <div class="welcome-content-luxury" data-aos="fade-right">
+                    <div class="section-label">
+                        <i class="fas fa-star"></i>
+                        <span>Welcome to Excellence</span>
+                    </div>
+                    <h2 class="section-heading-luxury">
+                        Your Trusted Partner in
+                        <br>
+                        <span class="heading-highlight">Premium Agricultural Exports</span>
+                    </h2>
+                    <div class="heading-divider"></div>
+                    
+                    <p class="luxury-paragraph">
+                        GreetWell Group stands at the pinnacle of India's premium agricultural export industry, 
+                        delivering the finest quality vegetables and golden turmeric to discerning customers worldwide. 
+                        Our unwavering commitment to excellence and sustainable farming practices bridges India's 
+                        rich agricultural heritage with global markets.
+                    </p>
+                    
+                    <p class="luxury-paragraph">
+                        Every product bearing our name represents decades of expertise, rigorous quality control, 
+                        and a promise of unmatched freshness. We don't just export products; we deliver trust, 
+                        reliability, and the authentic taste of India's finest harvest.
+                    </p>
+                    
+                    <div class="welcome-features-luxury">
+                        <div class="feature-item-luxury">
+                            <div class="feature-icon-box">
+                                <i class="fas fa-tractor"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Direct Farm Sourcing</h4>
+                                <p>Partnering with India's finest farmers for authentic quality</p>
+                            </div>
+                        </div>
+                        <div class="feature-item-luxury">
+                            <div class="feature-icon-box">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Quality Guaranteed</h4>
+                                <p>Rigorous testing and certification at every stage</p>
+                            </div>
+                        </div>
+                        <div class="feature-item-luxury">
+                            <div class="feature-icon-box">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Global Standards</h4>
+                                <p>International certifications and compliance assured</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="about.html" class="btn-luxury-primary">
+                        <span>Discover Our Story</span>
                         <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="contact.html" class="btn-secondary">
-                        <span>Contact Us</span>
+                </div>
+                
+                <!-- Visual Side -->
+                <div class="welcome-visual-luxury" data-aos="fade-left">
+                    <div class="image-showcase">
+                        <div class="showcase-image showcase-back">
+                            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80" alt="Agricultural Excellence">
+                            <div class="image-overlay"></div>
+                        </div>
+                        <div class="showcase-image showcase-front">
+                            <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=800&q=80" alt="Premium Turmeric">
+                            <div class="image-overlay"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-card">
+                        <div class="experience-content">
+                            <h3>10+</h3>
+                            <p>Years of<br>Excellence</p>
+                        </div>
+                        <div class="experience-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="quality-badge-float">
+                        <i class="fas fa-certificate"></i>
+                        <span>Premium<br>Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values with Video -->
+    <section class="core-values-luxury">
+        <div class="section-video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-agriculture-field-aerial-view-43546-large.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-luxury"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header-luxury" data-aos="fade-down">
+                <div class="section-label light">
+                    <i class="fas fa-heart"></i>
+                    <span>Our Core Values</span>
+                </div>
+                <h2 class="section-heading-luxury light">
+                    What Makes Us <span class="gold-highlight">Different</span>
+                </h2>
+                <p class="section-description light">
+                    Built on pillars of excellence, integrity, and sustainable growth
+                </p>
+            </div>
+            
+            <div class="values-grid-luxury">
+                <div class="value-card-luxury" data-aos="flip-up" data-aos-delay="0">
+                    <div class="value-icon-luxury">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timely Delivery</h3>
+                    <p>We deliver product shipments within committed time, ensuring freshness and reliability for your business needs worldwide.</p>
+                    <div class="value-decoration">01</div>
+                </div>
+                
+                <div class="value-card-luxury" data-aos="flip-up" data-aos-delay="200">
+                    <div class="value-icon-luxury">
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <h3>Best Price</h3>
+                    <p>We provide you the best prices with finest quality. Just ask for a quote and experience competitive excellence in action.</p>
+                    <div class="value-decoration">02</div>
+                </div>
+                
+                <div class="value-card-luxury" data-aos="flip-up" data-aos-delay="400">
+                    <div class="value-icon-luxury">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Finest Quality</h3>
+                    <p>We are committed to supply best quality products to our customers, meeting and exceeding international quality standards.</p>
+                    <div class="value-decoration">03</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate Products Showcase -->
+    <section class="ultimate-products-section" id="products">
+        <div class="container-wide">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Our Premium Range</span>
+                </div>
+                <h2 class="section-heading-luxury">
+                    Explore Our <span class="heading-highlight">Product Collection</span>
+                </h2>
+                <p class="section-description">
+                    From farm to global markets - each product represents our commitment to excellence
+                </p>
+            </div>
+            
+            <div class="products-luxury-grid">
+                <!-- Featured Product -->
+                <div class="product-featured" data-aos="zoom-in">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=1200&q=80" alt="Premium Turmeric">
+                        <div class="product-badge-featured">Featured</div>
+                        <div class="product-gradient"></div>
+                    </div>
+                    <div class="product-content-featured">
+                        <h3>Premium Turmeric</h3>
+                        <p class="product-tagline">Golden Curcumin Excellence</p>
+                        <ul class="product-benefits">
+                            <li><i class="fas fa-check"></i> High Curcumin Content (3-5%)</li>
+                            <li><i class="fas fa-check"></i> Organic Certified</li>
+                            <li><i class="fas fa-check"></i> Vibrant Golden Color</li>
+                            <li><i class="fas fa-check"></i> Rich Medicinal Properties</li>
+                        </ul>
+                        <div class="product-tags">
+                            <span class="tag"><i class="fas fa-leaf"></i> Organic</span>
+                            <span class="tag"><i class="fas fa-certificate"></i> Certified</span>
+                            <span class="tag"><i class="fas fa-star"></i> Premium</span>
+                        </div>
+                        <a href="contact.html" class="btn-product-quote">
+                            <span>Request Quote</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Standard Products -->
+                <div class="product-card-luxury" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1582515515705-e00f36f87f67?w=800&q=80" alt="Fresh Onions">
+                        <div class="product-hover-content">
+                            <a href="contact.html" class="btn-product-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Fresh Onions</h4>
+                        <p>Premium red & white varieties</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-box"></i> Multiple Sizes</span>
+                            <span><i class="fas fa-clock"></i> Long Shelf Life</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card-luxury" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1596097635941-c0146758c97f?w=800&q=80" alt="Fresh Potatoes">
+                        <div class="product-hover-content">
+                            <a href="contact.html" class="btn-product-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Fresh Potatoes</h4>
+                        <p>Superior quality from finest regions</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-check-circle"></i> Premium Grade</span>
+                            <span><i class="fas fa-warehouse"></i> Excellent Storage</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card-luxury" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1552659831-e9d721c35838?w=800&q=80" alt="Fresh Tomatoes">
+                        <div class="product-hover-content">
+                            <a href="contact.html" class="btn-product-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Fresh Tomatoes</h4>
+                        <p>Vine-ripened perfection</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-seedling"></i> Vine Ripened</span>
+                            <span><i class="fas fa-star"></i> Export Grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card-luxury" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1583926663785-b6f5551d54b7?w=800&q=80" alt="Green Chilies">
+                        <div class="product-hover-content">
+                            <a href="contact.html" class="btn-product-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Green Chilies</h4>
+                        <p>Perfect heat & flavor balance</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-fire"></i> Multiple Heat Levels</span>
+                            <span><i class="fas fa-check"></i> Fresh & Crisp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card-luxury" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1618512496160-28d13b0c562d?w=800&q=80" alt="Fresh Ginger">
+                        <div class="product-hover-content">
+                            <a href="contact.html" class="btn-product-icon">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h4>Fresh Ginger</h4>
+                        <p>Aromatic & pungent excellence</p>
+                        <div class="product-specs">
+                            <span><i class="fas fa-vial"></i> High Oil Content</span>
+                            <span><i class="fas fa-globe"></i> Export Quality</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" data-aos="fade-up" data-aos-delay="600">
+                <a href="products.html" class="btn-luxury-secondary">
+                    <span>View Complete Range</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Ultimate -->
+    <section class="why-choose-ultimate">
+        <div class="container">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Why GreetWell Group</span>
+                </div>
+                <h2 class="section-heading-luxury">
+                    Why Global Businesses <span class="heading-highlight">Choose Us</span>
+                </h2>
+                <p class="section-description">
+                    Discover the advantages that make us the preferred partner for premium exports
+                </p>
+            </div>
+            
+            <div class="why-grid-ultimate">
+                <div class="why-card-ultimate" data-aos="fade-up" data-aos-delay="0">
+                    <div class="why-number-bg">01</div>
+                    <div class="why-icon-container">
+                        <div class="why-icon">
+                            <i class="fas fa-tractor"></i>
+                        </div>
+                    </div>
+                    <h3>Direct Farm Sourcing</h3>
+                    <p>We work directly with trusted farmers across India's agricultural heartland, ensuring quality from farm to shipment with complete transparency.</p>
+                    <ul class="why-points">
+                        <li>Verified farmer networks</li>
+                        <li>Quality control at source</li>
+                        <li>Sustainable practices</li>
+                    </ul>
+                </div>
+
+                <div class="why-card-ultimate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-number-bg">02</div>
+                    <div class="why-icon-container">
+                        <div class="why-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                    </div>
+                    <h3>Rigorous Quality Testing</h3>
+                    <p>Every batch undergoes comprehensive laboratory testing and inspection at multiple stages to maintain international standards.</p>
+                    <ul class="why-points">
+                        <li>Multi-stage inspection</li>
+                        <li>Laboratory certification</li>
+                        <li>International compliance</li>
+                    </ul>
+                </div>
+
+                <div class="why-card-ultimate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-number-bg">03</div>
+                    <div class="why-icon-container">
+                        <div class="why-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                    </div>
+                    <h3>Global Certifications</h3>
+                    <p>Our products meet all international food safety and quality certifications with complete compliance to destination regulations.</p>
+                    <ul class="why-points">
+                        <li>ISO certified processes</li>
+                        <li>Organic certifications</li>
+                        <li>Export compliance assured</li>
+                    </ul>
+                </div>
+
+                <div class="why-card-ultimate" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-number-bg">04</div>
+                    <div class="why-icon-container">
+                        <div class="why-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <h3>Competitive Pricing</h3>
+                    <p>Best value without compromising quality. Our direct sourcing model ensures you get premium products at competitive prices.</p>
+                    <ul class="why-points">
+                        <li>Direct pricing benefits</li>
+                        <li>Flexible payment terms</li>
+                        <li>Volume discounts</li>
+                    </ul>
+                </div>
+
+                <div class="why-card-ultimate" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-number-bg">05</div>
+                    <div class="why-icon-container">
+                        <div class="why-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                    </div>
+                    <h3>Reliable Logistics</h3>
+                    <p>Efficient cold chain logistics and on-time delivery guarantee with real-time tracking for complete peace of mind.</p>
+                    <ul class="why-points">
+                        <li>Temperature-controlled transport</li>
+                        <li>Real-time tracking</li>
+                        <li>On-time delivery guaranteed</li>
+                    </ul>
+                </div>
+
+                <div class="why-card-ultimate" data-aos="fade-up" data-aos-delay="500">
+                    <div class="why-number-bg">06</div>
+                    <div class="why-icon-container">
+                        <div class="why-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                    </div>
+                    <h3>24/7 Customer Support</h3>
+                    <p>Dedicated support team available round the clock to address your queries and requirements promptly and professionally.</p>
+                    <ul class="why-points">
+                        <li>Always available support</li>
+                        <li>Multilingual assistance</li>
+                        <li>Personalized service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline Luxury -->
+    <section class="process-luxury-section">
+        <div class="section-video-bg">
+            <video autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-fresh-vegetables-on-a-wooden-table-43544-large.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay-luxury"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label light">
+                    <i class="fas fa-cogs"></i>
+                    <span>Our Process</span>
+                </div>
+                <h2 class="section-heading-luxury light">
+                    From <span class="gold-highlight">Farm to Global Markets</span>
+                </h2>
+                <p class="section-description light">
+                    A seamless journey ensuring quality at every step
+                </p>
+            </div>
+            
+            <div class="timeline-luxury">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="0">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content-box">
+                        <div class="timeline-icon-box">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Sourcing</h3>
+                        <p>Selecting premium products from verified farms across India's finest agricultural regions</p>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="100">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content-box">
+                        <div class="timeline-icon-box">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>Quality Testing</h3>
+                        <p>Rigorous inspection and laboratory testing to ensure international quality standards</p>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content-box">
+                        <div class="timeline-icon-box">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Processing</h3>
+                        <p>Advanced processing and premium packaging in state-of-the-art facilities</p>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="300">
+                    <div class="timeline-number">04</div>
+                    <div class="timeline-content-box">
+                        <div class="timeline-icon-box">
+                            <i class="fas fa-file-invoice"></i>
+                        </div>
+                        <h3>Documentation</h3>
+                        <p>Complete export documentation, certifications, and compliance management</p>
+                    </div>
+                </div>
+
+                <div class="timeline-connector"></div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                    <div class="timeline-number">05</div>
+                    <div class="timeline-content-box">
+                        <div class="timeline-icon-box">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3>Global Delivery</h3>
+                        <p>Efficient cold chain logistics ensuring fresh delivery worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Luxury Stats Section -->
+    <section class="luxury-stats-section">
+        <div class="stats-bg-pattern"></div>
+        <div class="container">
+            <div class="luxury-stats-grid">
+                <div class="luxury-stat-card" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-icon-luxury">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="stat-number-luxury">500+</h3>
+                    <p class="stat-title">Premium Products</p>
+                    <span class="stat-subtitle">Carefully curated selection</span>
+                </div>
+
+                <div class="luxury-stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon-luxury">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="stat-number-luxury">50+</h3>
+                    <p class="stat-title">Countries Served</p>
+                    <span class="stat-subtitle">Global presence & reach</span>
+                </div>
+
+                <div class="luxury-stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon-luxury">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="stat-number-luxury">200+</h3>
+                    <p class="stat-title">Happy Clients</p>
+                    <span class="stat-subtitle">Building lasting partnerships</span>
+                </div>
+
+                <div class="luxury-stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon-luxury">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="stat-number-luxury">99%</h3>
+                    <p class="stat-title">Satisfaction Rate</p>
+                    <span class="stat-subtitle">Exceeding expectations</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Luxury -->
+    <section class="testimonials-luxury-section">
+        <div class="container">
+            <div class="section-header-luxury" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-comments"></i>
+                    <span>Client Testimonials</span>
+                </div>
+                <h2 class="section-heading-luxury">
+                    What Our <span class="heading-highlight">Global Partners Say</span>
+                </h2>
+                <p class="section-description">
+                    Trusted by businesses worldwide for quality and reliability
+                </p>
+            </div>
+            
+            <div class="testimonials-luxury-grid">
+                <div class="testimonial-luxury-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="testimonial-quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-stars-luxury">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text-luxury">
+                        "GreetWell Group has been our trusted supplier for over 3 years. Their turmeric quality is unmatched, 
+                        and delivery is always on time. Highly recommended for premium Indian agricultural products."
+                    </p>
+                    <div class="testimonial-author-luxury">
+                        <div class="author-avatar-luxury">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-details">
+                            <h4>James Wilson</h4>
+                            <p>Import Manager, UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-luxury-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-stars-luxury">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text-luxury">
+                        "Outstanding quality and professional service. The team goes above and beyond 
+                        to ensure we receive the best products. Their customer support is exceptional."
+                    </p>
+                    <div class="testimonial-author-luxury">
+                        <div class="author-avatar-luxury">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-details">
+                            <h4>Maria Rodriguez</h4>
+                            <p>Procurement Head, Spain</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-luxury-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-stars-luxury">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text-luxury">
+                        "We've tried many suppliers, but GreetWell Group stands out for consistency and reliability. 
+                        Every shipment meets our exact specifications. A truly professional company."
+                    </p>
+                    <div class="testimonial-author-luxury">
+                        <div class="author-avatar-luxury">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-details">
+                            <h4>Ahmed Hassan</h4>
+                            <p>Director, UAE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate CTA Section -->
+    <section class="ultimate-cta-section">
+        <div class="cta-luxury-bg">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+            <div class="cta-shape shape-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-luxury-content" data-aos="zoom-in">
+                <div class="cta-icon-ultimate">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>Ready to Experience Premium Quality?</h2>
+                <p>Partner with India's leading agricultural export company and discover the GreetWell Group difference</p>
+                
+                <div class="cta-buttons-luxury">
+                    <a href="contact.html" class="btn-cta-gold">
                         <i class="fas fa-phone"></i>
+                        <span>Contact Us Now</span>
+                    </a>
+                    <a href="products.html" class="btn-cta-white">
+                        <i class="fas fa-shopping-basket"></i>
+                        <span>View Products</span>
                     </a>
                 </div>
                 
-                <div class="hero-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Countries</span>
+                <div class="cta-quick-contact">
+                    <div class="quick-contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>greetwellimpexperts@gmail.com</span>
                     </div>
-                    <div class="stat-card">
-                        <span class="stat-number">200+</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Shipments</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Quality</span>
+                    <div class="quick-contact">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 9588479681</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section class="products-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">🌱 Our Products</span>
-                <h2 class="section-heading">
-                    Premium <span class="heading-highlight">Products</span>
-                </h2>
-                <p class="section-description">
-                    Discover our range of high-quality agricultural exports
-                </p>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=400&q=80" alt="Turmeric">
-                        <span class="product-badge">Featured</span>
+    <!-- Ultimate Footer -->
+    <footer class="ultimate-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="currentColor"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="currentColor"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-luxury-grid">
+                    <div class="footer-col-brand">
+                        <div class="footer-brand-logo">
+                            <div class="footer-logo-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3>GreetWell<span>Group</span></h3>
+                        </div>
+                        <p class="footer-brand-text">
+                            Premium agricultural exports from India to the world. Quality you can trust, 
+                            service you can count on. Building global partnerships one shipment at a time.
+                        </p>
+                        <div class="footer-social-luxury">
+                            <a href="#" class="social-link-luxury"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link-luxury"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
-                    <div class="product-content">
-                        <h3>Premium Turmeric</h3>
-                        <p>Golden curcumin excellence with high medicinal value</p>
-                        <a href="products.html" class="btn-view-product">
-                            View Details
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                    
+                    <div class="footer-col-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-angle-right"></i> About Us</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Products</a></li>
+                            <li><a href="services.html"><i class="fas fa-angle-right"></i> Services</a></li>
+                            <li><a href="contact.html"><i class="fas fa-angle-right"></i> Contact</a></li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1582515515705-e00f36f87f67?w=400&q=80" alt="Onions">
-                        <span class="product-badge">Fresh</span>
+                    
+                    <div class="footer-col-links">
+                        <h4>Our Products</h4>
+                        <ul>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Premium Turmeric</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Onions</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Potatoes</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Fresh Tomatoes</a></li>
+                            <li><a href="products.html"><i class="fas fa-angle-right"></i> Green Chilies</a></li>
+                        </ul>
                     </div>
-                    <div class="product-content">
-                        <h3>Fresh Onions</h3>
-                        <p>Premium quality red & white onions</p>
-                        <a href="products.html" class="btn-view-product">
-                            View Details
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1552659831-e9d721c35838?w=400&q=80" alt="Tomatoes">
-                        <span class="product-badge">Organic</span>
-                    </div>
-                    <div class="product-content">
-                        <h3>Fresh Tomatoes</h3>
-                        <p>Vine-ripened perfection with rich flavor</p>
-                        <a href="products.html" class="btn-view-product">
-                            View Details
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
+                    
+                    <div class="footer-col-contact">
+                        <h4>Contact Info</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>C/o Adwani Publishing House, N-87, Hingana MIDC, Nagpur - 441110</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <span>+91 9588479681</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <span>greetwellimpexperts@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock"></i>
+                                <span>Mon - Sat: 9:00 AM - 6:00 PM IST</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">⚙️ Our Services</span>
-                <h2 class="section-heading">
-                    What We <span class="heading-highlight">Offer</span>
-                </h2>
-                <p class="section-description">
-                    Comprehensive export solutions for your business
-                </p>
-            </div>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search-dollar"></i>
-                    </div>
-                    <h3>Product Sourcing</h3>
-                    <p>Direct sourcing from verified farmers and producers</p>
+        
+        <div class="footer-bottom-luxury">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GreetWell Group. All Rights Reserved.</p>
+                    <p class="footer-love">Crafted with <i class="fas fa-heart"></i> for Excellence</p>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>Quality Control</h3>
-                    <p>Rigorous testing and quality assurance</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                    <h3>Global Shipping</h3>
-                    <p>Reliable logistics to your destination</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Start?</h2>
-            <p>Partner with us for quality agricultural exports</p>
-            
-            <div class="cta-buttons">
-                <a href="contact.html" class="btn-primary">
-                    <i class="fas fa-phone"></i>
-                    <span>Contact Us</span>
-                </a>
-                <a href="products.html" class="btn-secondary">
-                    <i class="fas fa-shopping-basket"></i>
-                    <span>View Products</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>GreetWell Group</h4>
-                    <p style="color: rgba(255, 255, 255, 0.8); font-size: 0.9rem; line-height: 1.6;">
-                        Premium agricultural exports from India to the world.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="products.html">Premium Turmeric</a></li>
-                        <li><a href="products.html">Fresh Onions</a></li>
-                        <li><a href="products.html">Fresh Tomatoes</a></li>
-                        <li><a href="products.html">Green Chilies</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul style="font-size: 0.85rem; line-height: 1.8;">
-                        <li style="color: rgba(255, 255, 255, 0.8);">Nagpur - 441110, India</li>
-                        <li><a href="tel:+919588479681">+91 9588479681</a></li>
-                        <li><a href="mailto:greetwellimpexperts@gmail.com">greetwellimpexperts@gmail.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 GreetWell Group. All Rights Reserved.</p>
-                <p class="developer-credit">
-                    Designed by <a href="https://theunlocksales.github.io/theunlocksales/" target="_blank">The Unlock Sales</a>
-                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top -->
-    <button class="scroll-top" id="scrollTop">
+    <!-- Scroll to Top Luxury -->
+    <button class="scroll-top-luxury" id="scrollTop">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <script>
-        // Mobile Menu Toggle
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
-
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-            hamburger.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            }
-        });
-
-        // Close menu when clicking a link
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-                hamburger.classList.remove('active');
-            });
-        });
-
-        // Scroll to Top
-        const scrollTopBtn = document.getElementById('scrollTop');
-
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                scrollTopBtn.classList.add('show');
-            } else {
-                scrollTopBtn.classList.remove('active');
-            }
-        });
-
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    </script>
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
